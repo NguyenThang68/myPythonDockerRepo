@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: mypython 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mypython
+  template:
+    metadata:
+      labels:
+        app: mypython 
+    spec:
+      containers:
+        - name: mypython 
+          image: devvgrmyacr.azurecr.io/mypython
+          ports:
+          - containerPort: 5000
