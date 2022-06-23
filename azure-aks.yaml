@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mypythondockerrepo
-        image: devvgrmyacr.azurecr.io/nguyenthang68/mypythondockerrepo
+        image: devvgrmyacr.azurecr.io/nguyenthang68/mypython
         ports:
         - containerPort: 5000
 # service type loadbalancer       
